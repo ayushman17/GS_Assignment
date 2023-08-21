@@ -1,0 +1,199 @@
+<!-- Q1 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 300px);
+            gap: 50px;
+        }
+
+        .image-grid img:hover {
+            transform: scale(1.5);
+        }
+    </style>
+    <title>Hover To Zoom Images</title>
+</head>
+
+<body>
+    <div class="image-grid">
+        <div><img src="https://picsum.photos/200"></div>
+        <div><img src="https://picsum.photos/201"></div>
+        <div><img src="https://picsum.photos/202"></div>
+        <div><img src="https://picsum.photos/203"></div>
+        <div><img src="https://picsum.photos/204"></div>
+        <div><img src="https://picsum.photos/205"></div>
+        <div><img src="https://picsum.photos/206"></div>
+        <div><img src="https://picsum.photos/207"></div>
+    </div>
+</body>
+
+</html>
+<!-- Q2 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        .star {
+            color: red;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #060505;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td colspan="2"><h2>Registration Form</h2></td>
+            </tr>
+            <tr>
+                <td><sup class="star">*</sup> First Name:</td>
+                <td><input type="text" id="first_name" placeholder="First Name" required></td>
+            </tr>
+            <tr>
+                <td>Last Name:</td>
+                <td><input type="text" id="last_name" placeholder="Last Name" required></td>
+            </tr>
+            <tr>
+                <td>Date of Birth:</td>
+                <td><input type="date" id="dob" required></td>
+            </tr>
+            <tr>
+                <td><sup class="star">*</sup> Password:</td>
+                <td><input type="password" id="password" required></td>
+            </tr>
+            <tr>
+                <td><sup class="star">*</sup> Confirm Password:</td>
+                <td><input type="password" id="confirm_password" name="confirm_password" required></td>
+            </tr>
+            <tr>
+                <td><sup class="star">*</sup> Qualification:</td>
+                <td>
+                    <input type="checkbox" id="qualification1" value="Bachelor's Degree" required>
+                    <text for="qualification1">Bachelor's Degree</text><br>
+                    <input type="checkbox" id="qualification2" value="Master's Degree">
+                    <text for="qualification2">Master's Degree</text><br>
+                    <input type="checkbox" id="qualification3" value="PHD Degree">
+                    <text for="qualification3">PHD Degree</text>
+                </td>
+            </tr>
+            <tr>
+                <td><sup class="star">*</sup> Gender:</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <text for="male">Male</text><br>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <text for="female">Female</text>
+                </td>
+            </tr>
+            <tr>
+                <td>Country:</td>
+                <td>
+                    <select id="country">
+                        <option value="india">India</option>
+                        <option value="usa">United States</option>
+                        <option value="canada">Canada</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="australia">Australia</option>
+                        <option value="other">Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><sup class="star">*</sup> Mobile:</td>
+                <td><input type="number" id="mobile" required></td>
+            </tr>
+            <tr>
+                <td><sup class="star">*</sup> Email:</td>
+                <td><input type="email" id="email" required></td>
+            </tr>
+            <tr>
+                <td>Comments:</td>
+                <td><textarea id="comments" placeholder="Comment Here" rows="4" cols="50"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Cancel">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+
+<!-- Q3 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <!-- table {
+        width: 50%;
+        border-collapse: collapse;
+        border: 2px solid black;
+      }
+    
+      th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+      }
+    
+      tr:hover {
+        background-color: rgb(208, 206, 206);
+      } -->
+</head>
+<body bgcolor="grey">
+
+<table>
+  <tr>
+    <th>Header 1</th>
+    <th>Header 2</th>
+    <th>Header 3</th>
+    <th>Header 4</th>
+    <th>Header 5</th>
+  </tr>
+  <tr>
+    <td>Row 1, Cell 1</td>
+    <td>Row 1, Cell 2</td>
+    <td>Row 1, Cell 3</td>
+    <td>Row 1, Cell 4</td>
+    <td>Row 1, Cell 5</td>
+  </tr>
+  <tr>
+    <td>Row 2, Cell 1</td>
+    <td>Row 2, Cell 2</td>
+    <td>Row 2, Cell 3</td>
+    <td>Row 2, Cell 4</td>
+    <td>Row 2, Cell 5</td>
+  </tr>
+  <tr>
+    <td>Row 3, Cell 1</td>
+    <td>Row 3, Cell 2</td>
+    <td>Row 3, Cell 3</td>
+    <td>Row 3, Cell 4</td>
+    <td>Row 3, Cell 5</td>
+  </tr>
+  <tr>
+    <td>Row 4, Cell 1</td>
+    <td>Row 4, Cell 2</td>
+    <td>Row 4, Cell 3</td>
+    <td>Row 4, Cell 4</td>
+    <td>Row 4, Cell 5</td>
+  </tr>
+</table>
+
+</body>
+</html>
