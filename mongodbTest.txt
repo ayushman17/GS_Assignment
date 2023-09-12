@@ -1,0 +1,23 @@
+1. Insert Data:
+
+db.employees.insertOne({ Name: "John Smith", Position: "Software Engineer", Department: "Engineering", Salary: 85000, "Hire Date": "2023-01-15") })
+
+2. Update Data:
+
+db.employees.updateMany( { Department: "Engineering", Position: "Software Engineer" }, { $set: { Salary: 90000 } } )
+
+3. Query Data:
+
+db.employees.find({ Department: "Engineering", Salary: { $gt: 80000 } })
+
+4. Delete Data:
+
+db.employees.deleteMany({ Department: "Marketing" })
+
+5.
+
+db.orders.aggregate([ { $match: { order_date: { $gte: ISODate("2023-01-01"), $lte: ISODate("2023-12-31") } } }, { $group: { _id: null, totalRevenue: { $sum: "$total_price" } } }, { $project: { _id: 0, totalRevenue: 1 } } ])
+
+6.
+db.products.createIndex({ "product_code": 1 })
+db.products.getIndexes()
