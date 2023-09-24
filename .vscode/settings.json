@@ -1,0 +1,5 @@
+{
+    "yaml.schemas": {
+        "kubernetes://schema/v1@service": "file:///Users/aychauhan/Module_3/GS_Assignment/K8s-YAML/service.yaml"
+    }
+}
